@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* User list styles */
+.user-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-list li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.user-list li:last-child {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-list li span {
+  margin-right: 10px;
+}
+
+.user-list li button {
+  border: none;
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-list li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Class list styles */
+.class-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.class-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.class-list li:last-child {
+  margin-bottom: 0;
+}
+
+.class-list li span {
+  margin-right: 10px;
+}
+
+.class-list li button {
+  border: none;
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.class-list li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Form styles */
+.form {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form input[type="submit"] {
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+.form button[type="button"] {
+  border: none;
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form button[type="button"]:hover {
+  background-color: #d32f2f;
 }
