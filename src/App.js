@@ -6,8 +6,8 @@ import Class from './components/Class.js';
 
 function App() {
   // define initial state for users and classes
-  const [users, setUsers] = useState([]);
-  const [classes, setClasses] = useState([]);
+  const [users, setUsers] = useState([{name:'Ethan Hobson'},{name:'Ethan Hobson'},{name:'Ethan Hobson'}]);
+  const [classes, setClasses] = useState([{name:'Ethan Hobson'},{name:'Ethan Hobson'},{name:'Ethan Hobson'}]);
 
   useEffect(() => {
     // fetch users and classes data from your database
@@ -52,17 +52,26 @@ function App() {
   // render the User and Class components, passing down the relevant data and update functions as props
   return (
     <div>
-      <h2>Users</h2>
-      {users.map(user => (
-        <User key={user.id} user={user} onSave={onUserUpdate} onCancel={() => {}} />
-      ))}
-      
-      <h2>Classes</h2>
-      {classes.map(classObj => (
-        <Class key={classObj.id} classObj={classObj} onSave={onClassUpdate} onCancel={() => {}} />
-      ))}
+      <div>
+        <h2>Users</h2>
+        <div className='user-list'>
+          {users.map(user => (
+            <User key={user.id} user={user} onSave={onUserUpdate} onCancel={() => {}}  />
+          ))}
+          </div>
+      </div>
+      <div>
+        <h2>Classes</h2>
+        <div className='class-list'>
+          {classes.map(classObj => (
+            <Class key={classObj.id} classObj={classObj} onSave={onClassUpdate} onCancel={() => {}} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+//        <div className='user-list'>
+//        <div className='class-list'>

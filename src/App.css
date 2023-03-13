@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #a3a3fd;
 }
 
 .container {
@@ -16,36 +17,38 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
-.user-list li {
+.user-listli{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
+  background-color: #a3a3fd;
 }
 
-.user-list li:last-child {
+.user-listli:last-child {
   margin-bottom: 0;
 }
 
-.user-list li span {
+.user-listli span {
   margin-right: 10px;
 }
 
-.user-list li button {
+.user-list button {
   border: none;
-  background-color: #f44336;
+  background-color: aliceblue;
   color: #fff;
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-.user-list li button:hover {
-  background-color: #d32f2f;
+.user-list button:hover {
+  background-color: #a3a3fd;
 }
 
 /* Class list styles */
@@ -53,41 +56,44 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
-.class-list li {
+.class-listli {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
+  background-color: #a3a3fd;
 }
 
-.class-list li:last-child {
+.class-list:last-child {
   margin-bottom: 0;
 }
 
-.class-list li span {
+.class-list span {
   margin-right: 10px;
 }
 
-.class-list li button {
+.class-list button {
   border: none;
-  background-color: #f44336;
+  background-color: aliceblue;
   color: #fff;
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-.class-list li button:hover {
-  background-color: #d32f2f;
+.class-list button:hover {
+  background-color: #a3a3fd;
 }
 
 /* Form styles */
 .form {
   margin-bottom: 20px;
+  color: red;
 }
 
 .form label {
